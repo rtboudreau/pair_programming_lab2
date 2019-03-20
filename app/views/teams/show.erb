@@ -1,0 +1,9 @@
+<%= @team.name %>
+<br>
+<%= @team.season %>
+
+<ul>
+  <% @team.fans.each do |fan| %>
+    <li><%= link_to fan.name, fan_path(fan) %></li>
+  <% end %>
+</ul>

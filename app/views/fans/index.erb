@@ -1,0 +1,6 @@
+<h1>Fan Names</h1>
+<ul>
+  <% @fans.each do |fan| %>
+  <li><%= link_to fan.name, fan %></li>
+  <% end %>
+</ul>

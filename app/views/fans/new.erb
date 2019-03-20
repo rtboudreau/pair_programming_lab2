@@ -1,0 +1,10 @@
+<h1>Create a Fan</h1>
+
+<%= form_for @fan do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.collection_select :team_id, Team.all, :id, :name%>
+  <br>
+  <%= f.submit %>
+<% end %>
